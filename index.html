@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    body {
+  margin: 0;
+  background-color: #8ee4af;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #05386b;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+#navbar a:hover {
+  background: #00abe5;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100vh auto 300px 100px;
+}
+
+#info {
+  text-align: center;
+  background: #379683;
+  padding-top: 45vh;
+}
+
+#project {
+  text-align: center;
+  background: #5cdb95;
+}
+
+#profile {
+  text-align: center;
+  background: #8ee4af;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+#link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.project-tile {
+  background: #5cdb95;
+  padding: 2em;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 800px) {
+  #navbar {
+    justify-content: space-around;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #navbar {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  #navbar a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #navbar a:last-of-type {
+    border-bottom: none;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+  <title>Personal Portfolio</title>
+</head>
+<body>
+<nav id="navbar">
+  <a href="#info">ABOUT</a>
+  <a href="#project">PROJECTS</a>
+  <a href="#profile">CONTACT</a>
+</nav>
+
+<main>
+
+  <section id="info">
+    <h1>I'm Joshua D. Tecson</h1>
+    <p>I'm a student in UC (University of the Cordilleras).</p>
+    <p>This is the portfolio of my final projects.</p>
+  </section>
+  <section id="project">
+    <br>
+    <h1>Final Projects</h1>
+    <a href="https://github.com/JoshuaTecson" target="_blank">All Projects</a>
+    <p></p>
+    <div class="tiles">
+      <div class="project-tile">
+        <a href="https://joshuatecson.github.io/Tribute/" target="_blank">
+        <img src="tribute.png" alt="Responsive Web Design Projects - Build a Tribute Page" class="responsive">
+        <div>Responsive Web Design Projects - Build a Tribute Page</div>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://joshuatecson.github.io/Survey/" target="_blank">
+        <img src="survey.png" alt="Responsive Web Design Projects - Build a Survey Form" class="responsive">
+        <div>Responsive Web Design Projects - Build a Survey Form</div>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://joshuatecson.github.io/Product/#Our%20Company" target="_blank">
+        <img src="product.png" alt="Responsive Web Design Projects - Build a Product Landing Page" class="responsive">
+        <div>Responsive Web Design Projects - Build a Product Landing Page</div>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="https://joshuatecson.github.io/Technical/#Ginataang%20Hipon%20Recipe" target="_blank">
+        <img src="technical.png" alt="Responsive Web Design Projects - Build a Technical Documentation Page" class="responsive">
+        <div>Responsive Web Design Projects - Build a Technical Documentation Page</div>
+        </a>
+      </div>
+      <div>
+  </section>
+
+  <section id="profile">
+<h2>CONTACT INFO:</h2>
+<pre>
+Email me here
+EMAIL ADDRESS:<u>tecsonjoshua11@gmail.com</u>
+<br>
+Social media
+<p class="link">FACEBOOK:<a href="https://www.facebook.com/mcpeSky">https://www.facebook.com/mcpeSky</a>
+            </p>
+<p class="link">TWITTER:<a href="https://twitter.com/mcpessky">https://twitter.com/mcpessky</a>
+            </p>
+</pre>
+      </section>
+</main>
+</body>
+</html>
